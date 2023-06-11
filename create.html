@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入 css -->
+    <link href="layui/css/layui.css" rel="stylesheet">
+    <!-- 引入 js -->
+    <script src="layui/layui.js"></script>
+    <script src="src/js/jquery-1.12.4.js"></script>
+    <style>
+        .layui-container {
+            margin-top: 2.5rem;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.1429rem;
+            padding: .3571rem 0;
+            background-color: #ccc;
+        }
+
+        .words {
+            position: absolute;
+            bottom: .2143rem;
+            right: .2143rem;
+            color: #808080;
+            font-size: .8571rem;
+        }
+
+        .words span {
+            font-weight: 700;
+            font-size: 1.5714rem;
+            font-style: italic;
+            font-family: Constantia, Georgia;
+        }
+
+        .layui-input-block {
+            margin-left: 0;
+        }
+
+        .layui-form-text {
+            /* border-bottom: .0714rem solid #ccc; */
+            border: 1px solid #064a0f;
+        }
+
+        .layui-form-item {
+            margin: 15px 0;
+        }
+
+        .layui-form-label {
+            padding: .6429rem 0;
+        }
+
+        .w-auto {
+            width: auto;
+        }
+
+        .xxx {
+            float: right;
+            margin: 0 5px;
+        }
+
+        .uf {
+            display: inline-block;
+
+        }
+
+        .upload-frame {
+            text-align: center;
+            width: 100%;
+            /* height: 20px; */
+            /* border: 1px solid #ccc; */
+
+        }
+
+        .t-align {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layui-container">
+        <blockquote class="layui-elem-quote layui-text">
+            中外合作办学机构优秀案例申报
+        </blockquote>
+        <!-- <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 title">
+            中外合作办学机构优秀案例申报
+        </div> -->
+        <div class="layui-row">
+            <form action="#" class="layui-form" method="post">
+                <label class="layui-form-label w-auto">一、综述材料：</label>
+                <div class="layui-form-item layui-form-text">
+                    <!-- <label class="layui-form-label">综述材料：</label> -->
+                    <div class="layui-input-block">
+                        <textarea placeholder="请输入内容" class="layui-textarea" maxlength="500" name="create1"
+                            lay-verify="required"></textarea>
+                        <p class="words">还可输入<span>5</span>字</p>
+                    </div>
+                    <div class="layui-upload">
+                        <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                            <label class="layui-form-label uf">支撑材料：</label>
+
+                        </div>
+                        <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+
+                            <label class="layui-form-label uf upload-frame" id="label1">只能上传一个文件</label>
+                        </div>
+                        <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 up-aligh">
+                            <button type="button" class="layui-btn demo-class-accept" id="test1">
+                                <i class="layui-icon">&#xe67c;</i>上传
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <label class="layui-form-label w-auto">二、综述材料：</label>
+                <div class="layui-form-item layui-form-text">
+                    <!-- <label class="layui-form-label">综述材料：</label> -->
+                    <div class="layui-input-block">
+                        <textarea placeholder="请输入内容" class="layui-textarea" maxlength="500" name="create2"
+                            lay-verify="required"></textarea>
+                        <p class="words">还可输入<span>5</span>字</p>
+                    </div>
+                    <div class="layui-upload">
+                        <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                            <label class="layui-form-label uf">支撑材料：</label>
+
+                        </div>
+                        <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                            <label class="layui-form-label uf upload-frame" id="label2">只能上传一个文件</label>
+                        </div>
+                        <div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+                            <button type="button" class="layui-btn demo-class-accept" id="test2">
+                                <i class="layui-icon">&#xe67c;</i>上传
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <label class="layui-form-label w-auto">三、综述材料：</label>
+                <div class="layui-form-item layui-form-text">
+                    <!-- <label class="layui-form-label">综述材料：</label> -->
+                    <div class="layui-input-block">
+                        <textarea placeholder="请输入内容" class="layui-textarea" maxlength="500" name="create3"
+                            lay-verify="required"></textarea>
+                        <p class="words">还可输入<span>5</span>字</p>
+                    </div>
+                    <div class="layui-upload">
+                        <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                            <label class="layui-form-label uf">支撑材料：</label>
+
+                        </div>
+                        <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+
+                            <label class="layui-form-label uf upload-frame" id="label3">只能上传一个文件</label>
+                        </div>
+                        <div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+                            <button type="button" class="layui-btn demo-class-accept" id="test3">
+                                <i class="layui-icon">&#xe67c;</i>上传
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <label class="layui-form-label w-auto">四、综述材料：</label>
+                <div class="layui-form-item layui-form-text">
+                    <!-- <label class="layui-form-label">综述材料：</label> -->
+                    <div class="layui-input-block">
+                        <textarea placeholder="请输入内容" class="layui-textarea" maxlength="500" name="create4"
+                            lay-verify="required"></textarea>
+                        <p class="words">还可输入<span>5</span>字</p>
+                    </div>
+                    <div class="layui-upload">
+                        <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                            <label class="layui-form-label uf">支撑材料：</label>
+                        </div>
+                        <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+
+                            <label class="layui-form-label uf upload-frame" id="label4">只能上传一个文件</label>
+                        </div>
+                        <div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+                            <button type="button" class="layui-btn demo-class-accept" id="test4">
+                                <i class="layui-icon">&#xe67c;</i>上传
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <label class="layui-form-label w-auto">五、综述材料：</label>
+                <div class="layui-form-item layui-form-text">
+                    <!-- <label class="layui-form-label">综述材料：</label> -->
+                    <div class="layui-input-block">
+                        <textarea placeholder="请输入内容" class="layui-textarea" maxlength="500" name="create5"
+                            lay-verify="required"></textarea>
+                        <p class="words">还可输入<span>5</span>字</p>
+                    </div>
+                    <div class="layui-upload">
+                        <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                            <label class="layui-form-label uf">支撑材料：</label>
+
+                        </div>
+                        <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                            <label class="layui-form-label uf upload-frame" id="label5">只能上传一个文件</label>
+                        </div>
+                        <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 ">
+                            <button type="button" class="layui-btn demo-class-accept" id="test5">
+                                <i class="layui-icon">&#xe67c;</i>上传
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="layui-form-item t-align">
+                    <div class="layui-input-block">
+                        <button id="submit" type="submit" class="layui-btn" lay-submit lay-filter="demo1">立即提交</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+
+
+            </form>
+            <input type="file" name="file6" id="one">
+            <button id="btnUpload" class="btn">按钮</button>
+        </div>
+    </div>
+    <script>
+        // 字数统计
+        $('.layui-input-block textarea').on('input', function () {
+            // console.log('input')
+            let value = $(this).val()
+            // console.log('value:', value)
+            // $('.words span').text(value.length)
+            $('.words span').html(500 - value.length)
+        })
+        // 设置初始文本
+        $('.words span').html(500)
+        // $('#test1').next().attr('name','file1')
+        // console.log( $('#test1').next())
+    </script>
+    <script>
+        //文件上传
+
+        layui.use(function () {
+            var upload = layui.upload;
+            var layer = layui.layer;
+            // 渲染
+            upload.render({
+                elem: '#test1', // 绑定单个元素
+                url: 'https://httpbin.org', // 此处配置你自己的上传接口即可
+                accept: 'file', // 普通文件
+
+                choose: function (obj) {
+                    var that = this;
+                    var files = this.files = obj.pushFile(); // 将每次选择的文件追加到文件队列
+                    // 读取本地文件
+                    obj.preview(function (index, file, result) {
+                        $('#label1').html(file.name)
+                        $('#labeltext').remove()
+                        $('#test1').after("<i id=\"labeltext\">上传中········</i>")
+                        // $('.loading').css('display','inline-block')
+
+                    });
+                },
+                done: function (res) {
+                    $('#labeltext').remove()
+                    layer.msg('上传成功');
+                    $('#test1').after("<i id=\"labeltext\" style=\"color:green\">重新成功</i>")
+                    console.log(res);
+                },
+                error: function (index, upload) {
+                    $('#labeltext').remove()
+                    layer.msg('上传失败');
+                    $('#test1').after("<i id=\"labeltext\" style=\"color:red\">请重新上传</i>")
+                    console.log(index); // 当前文件的索引
+                    // upload(); 重新上传的方法
+                }
+            });
+        });
+        layui.use(function () {
+            var upload = layui.upload;
+            var layer = layui.layer;
+            // 渲染
+            upload.render({
+                elem: '#test2', // 绑定单个元素
+                url: 'https://httpbin.org', // 此处配置你自己的上传接口即可
+                accept: 'file', // 普通文件
+
+                choose: function (obj) {
+                    var that = this;
+                    var files = this.files = obj.pushFile(); // 将每次选择的文件追加到文件队列
+                    // 读取本地文件
+                    obj.preview(function (index, file, result) {
+                        $('#label2').html(file.name)
+                        $('#labeltext1').remove()
+                        $('#test2').after("<i id=\"labeltext1\">上传中········</i>")
+                        // $('.loading').css('display','inline-block')
+
+                    });
+                },
+                done: function (res) {
+                    $('#labeltext1').remove()
+                    layer.msg('上传成功');
+                    $('#test2').after("<i id=\"labeltext1\" style=\"color:green\">重新成功</i>")
+                    console.log(res);
+                },
+                error: function (index, upload) {
+                    $('#labeltext1').remove()
+                    layer.msg('上传失败');
+                    $('#test2').after("<i id=\"labeltext1\" style=\"color:red\">请重新上传</i>")
+                    console.log(index); // 当前文件的索引
+                    // upload(); 重新上传的方法
+                }
+            });
+        });
+        layui.use(function () {
+            var upload = layui.upload;
+            var layer = layui.layer;
+            // 渲染
+            upload.render({
+                elem: '#test3', // 绑定单个元素
+                url: 'https://httpbin.org', // 此处配置你自己的上传接口即可
+                accept: 'file', // 普通文件
+
+                choose: function (obj) {
+                    var that = this;
+                    var files = this.files = obj.pushFile(); // 将每次选择的文件追加到文件队列
+                    // 读取本地文件
+                    obj.preview(function (index, file, result) {
+                        $('#label3').html(file.name)
+                        $('#labeltext2').remove()
+                        $('#test3').after("<i id=\"labeltext2\">上传中········</i>")
+                        // $('.loading').css('display','inline-block')
+
+                    });
+                },
+                done: function (res) {
+                    $('#labeltext2').remove()
+                    layer.msg('上传成功');
+                    $('#test3').after("<i id=\"labeltext2\" style=\"color:green\">重新成功</i>")
+                    console.log(res);
+                },
+                error: function (index, upload) {
+                    $('#labeltext2').remove()
+                    layer.msg('上传失败');
+                    $('#test3').after("<i id=\"labeltext2\" style=\"color:red\">请重新上传</i>")
+                    console.log(index); // 当前文件的索引
+                    // upload(); 重新上传的方法
+                }
+            });
+        });
+        layui.use(function () {
+            var upload = layui.upload;
+            var layer = layui.layer;
+            // 渲染
+            upload.render({
+                elem: '#test4', // 绑定单个元素
+                url: 'https://httpbin.org', // 此处配置你自己的上传接口即可
+                accept: 'file', // 普通文件
+                choose: function (obj) {
+                    var that = this;
+                    var files = this.files = obj.pushFile(); // 将每次选择的文件追加到文件队列
+                    // 读取本地文件
+                    obj.preview(function (index, file, result) {
+                        $('#label4').html(file.name)
+                        $('#labeltext4').remove()
+                        $('#test4').after("<i id=\"labeltext4\">上传中········</i>")
+                        // $('.loading').css('display','inline-block')
+
+                    });
+                },
+                done: function (res) {
+                    $('#labeltext4').remove()
+                    layer.msg('上传成功');
+                    $('#test4').after("<i id=\"labeltext4\" style=\"color:green\">重新成功</i>")
+                    console.log(res);
+                },
+                error: function (index, upload) {
+                    $('#labeltext4').remove()
+                    layer.msg('上传失败');
+                    $('#test4').after("<i id=\"labeltext4\" style=\"color:red\">请重新上传</i>")
+                    console.log(index); // 当前文件的索引
+                    // upload(); 重新上传的方法
+                }
+            });
+        });
+        layui.use(function () {
+            var upload = layui.upload;
+            var layer = layui.layer;
+            // 渲染
+            upload.render({
+                elem: '#test5', // 绑定单个元素
+                url: 'https://httpbin.org', // 此处配置你自己的上传接口即可
+                accept: 'file', // 普通文件
+                choose: function (obj) {
+                    var that = this;
+                    var files = this.files = obj.pushFile(); // 将每次选择的文件追加到文件队列
+                    // 读取本地文件
+                    obj.preview(function (index, file, result) {
+                        $('#label5').html(file.name)
+                        $('#labeltext5').remove()
+                        $('#test5').after("<i id=\"labeltext5\">上传中········</i>")
+                        // $('.loading').css('display','inline-block')
+
+                    });
+                },
+                done: function (res) {
+                    $('#labeltext5').remove()
+                    layer.msg('上传成功');
+                    $('#test5').after("<i id=\"labeltext5\" style=\"color:green\">重新成功</i>")
+                    console.log(res);
+                },
+                error: function (index, upload) {
+                    $('#labeltext5').remove()
+                    layer.msg('上传失败');
+                    $('#test5').after("<i id=\"labeltext5\" style=\"color:red\">请重新上传</i>")
+                    console.log(index); // 当前文件的索引
+                    // upload(); 重新上传的方法
+                }
+            });
+        });
+
+        //表单验证
+        layui.use(['form', 'laydate', 'util'], function () {
+            var form = layui.form;
+            var layer = layui.layer;
+            // 提交事件
+            form.on('submit(demo1)', function (data) {
+                var field = data.field; // 获取表单字段值
+                // 显示填写结果，仅作演示用
+                layer.alert(JSON.stringify(field), {
+                    title: '当前填写的字段值'
+                });
+                // 此处可执行 Ajax 等操作
+                // …
+                return false; // 阻止默认 form 跳转
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#test1').next().attr('name', 'file1')
+            $('#test2').next().attr('name', 'file2')
+            $('#test3').next().attr('name', 'file3')
+            $('#test4').next().attr('name', 'file4')
+            $('#test5').next().attr('name', 'file5')
+            console.log($('#one')[0].files)
+            var btnUpload = document.querySelector('#btnUpload')
+            // 2. 为按钮添加 click 事件监听
+            btnUpload.addEventListener('click', function () {
+                // 3. 获取到选择的文件列表
+                console.log($('#one')[0].files)
+            })
+
+        })
+    </script>
+</body>
+
+</html>
